@@ -1,8 +1,17 @@
-export const Navbar = () => {
+import { Media } from 'reactstrap'
+import { NavText } from './NavText'
+
+export const Navbar = ({ movie }) => {
   return (
-    <div className='row '>
+    <div
+      className='row  '
+      style={{
+        backgroundImage: `url(https://image.tmdb.org/t/p/original${movie?.backdrop_path})`,
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
       <div className='col-auto mt-2 '>
-        <h1>Netflix</h1>
+        <h1>NETFLIX</h1>
       </div>
       <div className='col-auto my-2'>
         <ul className='  '>
@@ -12,12 +21,12 @@ export const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href='' className='text-muted'>
+            <a href='' className=''>
               TV Shows
             </a>
           </li>
           <li>
-            <a href='' className='text-muted'>
+            <a href='' className=''>
               Movies
             </a>
           </li>

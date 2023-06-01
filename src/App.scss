@@ -1,26 +1,15 @@
-a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-a:active {
-  text-decoration: none;
-}
-a {
-  color: black;
-}
-a:hover {
-  color: #bdbdbd;
+#root {
+  background-color: black;
+  color-scheme: light dark;
 }
 
 .row {
   display: inline-flex;
-  white-space: nowrap;
   justify-content: space-between;
   width: 100vw;
-
+  height: 100vh;
+  z-index: 1;
+  position: relative;
   ul {
     list-style: none;
     margin-left: -42vw;
@@ -38,8 +27,7 @@ a:hover {
 .login {
   text-align: center;
   .btn {
-    font-size: 0.7rem;
-    margin-top: 49%;
+    margin-top: 1rem;
   }
 }
 
@@ -59,6 +47,172 @@ a:hover {
   .login {
     .btn {
       margin-top: 25%;
+    }
+  }
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+ul {
+  a {
+    color: white;
+  }
+}
+
+a:hover {
+  color: #ba3f29;
+}
+
+@media screen and (max-width: 1168px) {
+  .row {
+    background-size: contain;
+  }
+}
+@media screen and (min-width: 1168px) {
+  .row {
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 810px) {
+  .row {
+    h1 {
+      font-size: 1.4rem;
+    }
+    .btn {
+      font-size: 0.7rem;
+      margin-top: 0.7rem;
+    }
+    ul {
+      margin-top: -0.9rem;
+    }
+  }
+}
+@media screen and (min-width: 811px) {
+  .row {
+    h1 {
+      font-size: 2rem;
+    }
+    .btn {
+      font-size: 1rem;
+    }
+    ul {
+      margin-top: -0.3rem;
+    }
+  }
+}
+@media screen and (max-width: 412px) {
+  .movie-text {
+    margin-left: 0.4rem;
+    margin-top: -83vh;
+    h1 {
+      font-size: 0.8rem;
+    }
+    .btn {
+      font-size: 0.7rem;
+      height: 1.9rem;
+      padding: 0.3rem;
+      text-align: center;
+    }
+  }
+}
+
+.movie-text {
+  z-index: 2;
+  position: absolute;
+}
+@media screen and (min-width: 413px) {
+  .movie-text {
+    margin-left: 0.4rem;
+    margin-top: -82vh;
+    h1 {
+      font-size: 0.8rem;
+    }
+    .btn {
+      font-size: 0.7rem;
+      height: 1.9rem;
+      padding: 0.3rem;
+      text-align: center;
+    }
+  }
+}
+@media screen and (min-width: 506px) {
+  .movie-text {
+    margin-left: 0.4rem;
+    margin-top: -78vh;
+    h1 {
+      font-size: 1.2rem;
+    }
+    .btn {
+      font-size: 1rem;
+      height: auto;
+      text-align: center;
+    }
+  }
+}
+@media screen and (min-width: 700px) {
+  .movie-text {
+    margin-left: 1rem;
+    margin-top: -70vh;
+    h1 {
+      font-size: 1.4rem;
+    }
+    .btn {
+      font-size: 1rem;
+      height: auto;
+      text-align: center;
+    }
+  }
+}
+@media screen and (min-width: 890px) {
+  .movie-text {
+    margin-left: 1rem;
+    margin-top: -60vh;
+    h1 {
+      font-size: 1.3rem;
+    }
+    .btn {
+      font-size: 1rem;
+      height: auto;
+      text-align: center;
+    }
+  }
+}
+@media screen and (min-width: 1168px) {
+  .movie-text {
+    margin-left: 1rem;
+    margin-top: -27vh;
+    h1 {
+      font-size: 3rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-around;
+      font-size: 1.8rem;
+      height: auto;
+      text-align: center;
+    }
+  }
+}
+@media screen and (min-width: 1571px) {
+  .movie-text {
+    margin-left: 2rem;
+    margin-top: -35vh;
+    h1 {
+      font-size: 3rem;
+    }
+    .btn {
+      font-size: 3rem;
+      height: auto;
+      text-align: center;
     }
   }
 }
