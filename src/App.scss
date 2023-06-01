@@ -1,0 +1,64 @@
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+a {
+  color: black;
+}
+a:hover {
+  color: #bdbdbd;
+}
+
+.row {
+  display: inline-flex;
+  white-space: nowrap;
+  justify-content: space-between;
+  width: 100vw;
+
+  ul {
+    list-style: none;
+    margin-left: -42vw;
+  }
+  li {
+    display: inline-flex;
+    padding: 1rem;
+  }
+
+  h1 {
+    color: #d93b29;
+    margin-left: 6%;
+  }
+}
+.login {
+  text-align: center;
+  .btn {
+    font-size: 0.7rem;
+    margin-top: 49%;
+  }
+}
+
+@media screen and (max-width: 756px) {
+  .row {
+    ul {
+      display: none;
+    }
+  }
+  .login {
+    .btn {
+      margin-top: 29%;
+    }
+  }
+}
+@media screen and (max-width: 392px) {
+  .login {
+    .btn {
+      margin-top: 25%;
+    }
+  }
+}
