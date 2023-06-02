@@ -84,10 +84,10 @@ a:hover {
 @media screen and (max-width: 810px) {
   .row {
     h1 {
-      font-size: 1.4rem;
+      font-size: 1.8rem;
     }
     .btn {
-      font-size: 0.7rem;
+      font-size: 1rem;
       margin-top: 0.7rem;
     }
     ul {
@@ -214,5 +214,58 @@ a:hover {
       height: auto;
       text-align: center;
     }
+  }
+  .row {
+    h1 {
+      font-size: 3rem;
+    }
+    ul {
+      font-size: 1.8rem;
+    }
+    .btn {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.movie-row {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+
+.image-container {
+  position: relative;
+  transition: transform 0.2s;
+  max-width: 500px;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 1.3rem;
+  padding: 20px;
+  text-align: center;
+  height: 14rem;
+  color: white;
+  span {
+    margin-right: 3px;
+  }
+}
+@media only screen and (min-width: 440px) {
+  .overlay {
+    height: 16rem;
+  }
+}
+@media only screen and (min-width: 529px) {
+  .overlay {
+    height: 19rem;
   }
 }

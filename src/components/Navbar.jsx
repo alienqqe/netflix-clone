@@ -1,4 +1,3 @@
-import { Media } from 'reactstrap'
 import { NavText } from './NavText'
 
 export const Navbar = ({ movie }) => {

@@ -2,29 +2,35 @@ import { Navbar } from './components/Navbar'
 import './App.scss'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { requests } from './Requests'
-import { useLayoutEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { NavText } from './components/NavText'
+import { Row } from './components/Row'
 
 function App() {
-  const [movies, setMovies] = useState([])
+  const [popularMovies, setPopularMovies] = useState([])
 
-  const movie = movies[Math.floor(Math.random() * movies.length)]
+  const movie = popularMovies[Math.floor(Math.random() * popularMovies.length)]
 
+  // Fetching movies for navbar
   const getPopularMovies = async () => {
     const res = await fetch(requests.requestPopular)
     const resJSON = await res.json()
-    setMovies(resJSON.results)
+    setPopularMovies(resJSON.results)
   }
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     getPopularMovies()
   }, [])
 
-  console.log(movie)
   return (
     <>
       <Navbar movie={movie} />
       <NavText movie={movie} />
+      <Row title='Upcoming' fetchURL={requests.requestUpcoming} />
+      <Row title='Popular' fetchURL={requests.requestPopular} />
+      <Row title='Trending' fetchURL={requests.requestTrending} />
+     
+      
     </>
   )
 }
