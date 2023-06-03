@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 #root {
   background-color: black;
   color-scheme: light dark;
+  font-family: 'Roboto', sans-serif;
 }
 
 .row {
@@ -73,7 +76,7 @@ a:hover {
 
 @media screen and (max-width: 1168px) {
   .row {
-    background-size: contain;
+    background-size: cover;
   }
 }
 @media screen and (min-width: 1168px) {
@@ -87,7 +90,6 @@ a:hover {
       font-size: 1.8rem;
     }
     .btn {
-      font-size: 1rem;
       margin-top: 0.7rem;
     }
     ul {
@@ -100,143 +102,145 @@ a:hover {
     h1 {
       font-size: 2rem;
     }
-    .btn {
-      font-size: 1rem;
-    }
+
     ul {
       margin-top: -0.3rem;
     }
   }
 }
-@media screen and (max-width: 412px) {
-  .movie-text {
-    margin-left: 0.4rem;
-    margin-top: -83vh;
-    h1 {
-      font-size: 0.8rem;
-    }
-    .btn {
-      font-size: 0.7rem;
-      height: 1.9rem;
-      padding: 0.3rem;
-      text-align: center;
-    }
-  }
-}
+// @media screen and (max-width: 412px) {
+//   .movie-text {
+//     margin-left: 0.4rem;
+//     margin-top: -83vh;
+//     h1 {
+//       font-size: 0.8rem;
+//     }
+//     .btn {
+//       font-size: 0.7rem;
+//       height: 1.9rem;
+//       padding: 0.3rem;
+//       text-align: center;
+//     }
+//   }
+// }
 
 .movie-text {
-  z-index: 2;
-  position: absolute;
+  z-index: 1;
 }
-@media screen and (min-width: 413px) {
-  .movie-text {
-    margin-left: 0.4rem;
-    margin-top: -82vh;
-    h1 {
-      font-size: 0.8rem;
-    }
-    .btn {
-      font-size: 0.7rem;
-      height: 1.9rem;
-      padding: 0.3rem;
-      text-align: center;
-    }
-  }
-}
-@media screen and (min-width: 506px) {
-  .movie-text {
-    margin-left: 0.4rem;
-    margin-top: -78vh;
-    h1 {
-      font-size: 1.2rem;
-    }
-    .btn {
-      font-size: 1rem;
-      height: auto;
-      text-align: center;
-    }
-  }
-}
-@media screen and (min-width: 700px) {
-  .movie-text {
-    margin-left: 1rem;
-    margin-top: -70vh;
-    h1 {
-      font-size: 1.4rem;
-    }
-    .btn {
-      font-size: 1rem;
-      height: auto;
-      text-align: center;
-    }
-  }
-}
-@media screen and (min-width: 890px) {
-  .movie-text {
-    margin-left: 1rem;
-    margin-top: -60vh;
-    h1 {
-      font-size: 1.3rem;
-    }
-    .btn {
-      font-size: 1rem;
-      height: auto;
-      text-align: center;
-    }
-  }
-}
-@media screen and (min-width: 1168px) {
-  .movie-text {
-    margin-left: 1rem;
-    margin-top: -27vh;
-    h1 {
-      font-size: 3rem;
-    }
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: space-around;
-      font-size: 1.8rem;
-      height: auto;
-      text-align: center;
-    }
-  }
-}
-@media screen and (min-width: 1571px) {
-  .movie-text {
-    margin-left: 2rem;
-    margin-top: -35vh;
-    h1 {
-      font-size: 3rem;
-    }
-    .btn {
-      font-size: 3rem;
-      height: auto;
-      text-align: center;
-    }
-  }
-  .row {
-    h1 {
-      font-size: 3rem;
-    }
-    ul {
-      font-size: 1.8rem;
-    }
-    .btn {
-      font-size: 1.5rem;
-    }
-  }
-}
+// @media screen and (min-width: 413px) {
+//   .movie-text {
+//     margin-left: 0.4rem;
+//     margin-top: -82vh;
+//     h1 {
+//       font-size: 0.8rem;
+//     }
+//     .btn {
+//       font-size: 0.7rem;
+//       height: 1.9rem;
+//       padding: 0.3rem;
+//       text-align: center;
+//     }
+//   }
+// }
+// @media screen and (min-width: 506px) {
+//   .movie-text {
+//     margin-left: 0.4rem;
+//     margin-top: -78vh;
+//     h1 {
+//       font-size: 1.2rem;
+//     }
+//     .btn {
+//       font-size: 1rem;
+//       height: auto;
+//       text-align: center;
+//     }
+//   }
+// }
+// @media screen and (min-width: 700px) {
+//   .movie-text {
+//     margin-left: 1rem;
+//     margin-top: -70vh;
+//     h1 {
+//       font-size: 1.4rem;
+//     }
+//     .btn {
+//       font-size: 1rem;
+//       height: auto;
+//       text-align: center;
+//     }
+//   }
+// }
+// @media screen and (min-width: 890px) {
+//   .movie-text {
+//     margin-left: 1rem;
+//     margin-top: -60vh;
+//     h1 {
+//       font-size: 1.3rem;
+//     }
+//     .btn {
+//       font-size: 1rem;
+//       height: auto;
+//       text-align: center;
+//     }
+//   }
+// }
+// @media screen and (min-width: 1168px) {
+//   .movie-text {
+//     margin-left: 1rem;
+//     margin-top: -27vh;
+//     h1 {
+//       font-size: 3rem;
+//     }
+//     .btn {
+//       display: inline-flex;
+//       align-items: center;
+//       justify-content: space-around;
+//       font-size: 1.8rem;
+//       height: auto;
+//       text-align: center;
+//     }
+//   }
+// }
+// @media screen and (min-width: 1571px) {
+//   .movie-text {
+//     margin-left: 2rem;
+//     margin-top: -35vh;
+//     h1 {
+//       font-size: 3rem;
+//     }
+//     .btn {
+//       font-size: 3rem;
+//       height: auto;
+//       text-align: center;
+//     }
+//   }
+//   .row {
+//     h1 {
+//       font-size: 3rem;
+//     }
+//     ul {
+//       font-size: 1.8rem;
+//     }
+//     .btn {
+//       font-size: 1.5rem;
+//     }
+//   }
+// }
 
 .movie-row {
-  overflow-x: auto;
   flex-wrap: nowrap;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  max-height: 300px;
+  overflow: hidden;
 }
-
+.movie-row:hover {
+  overflow-x: scroll;
+}
 .image-container {
   position: relative;
   transition: transform 0.2s;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .image-container:hover .overlay {
@@ -259,13 +263,39 @@ a:hover {
     margin-right: 3px;
   }
 }
+@media only screen and (max-width: 439px) {
+  .overlay {
+    height: 15rem;
+  }
+}
+
 @media only screen and (min-width: 440px) {
   .overlay {
-    height: 16rem;
+    height: 17rem;
   }
 }
 @media only screen and (min-width: 529px) {
   .overlay {
     height: 19rem;
   }
+}
+@media only screen and (max-width: 1166px) {
+  .navbar-row {
+    height: 28vh;
+  }
+}
+.movie-text {
+  position: absolute;
+  top: 13%;
+  z-index: 1;
+  margin-left: 1rem;
+}
+@media only screen and (min-width: 1166px) {
+  .movie-text {
+    position: absolute;
+    top: 62%;
+  }
+}
+.navbar-row {
+  filter: brightness(0.9);
 }
